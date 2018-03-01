@@ -1,0 +1,12 @@
+<h3>Event Driven Application Development</h3>
+<p>
+  List all of the mock Data names
+</p>
+<ul>
+  <li *ngFor="let bill of bills;let i = index" (click)="itemClicked(bill)">
+       <span>{{bill.br.bill_name}}</span>
+  </li>
+
+
+</ul>
+

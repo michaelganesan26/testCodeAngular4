@@ -15,6 +15,7 @@ import { HighlightDirective } from './test-code/highlight.directive';
 import { DATA_PRODUCTION_SERVER, DATA_TEST_SERVER } from './test-code/global-variables';
 import { ListbillsComponent } from './test-code/listbills/listbills.component';
 import { DatefromstartPipe } from './test-code/datefromstart.pipe';
+import { EventDrivenComponent } from './test-code/event-driven/event-driven.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { DatefromstartPipe } from './test-code/datefromstart.pipe';
     HelloWorldComponent,
     HighlightDirective,
     ListbillsComponent,
-    DatefromstartPipe
+    DatefromstartPipe,
+    EventDrivenComponent
   ],
   imports: [
     BrowserModule,

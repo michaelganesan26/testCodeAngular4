@@ -1,25 +1,31 @@
+import { IBill, IBillRequest } from './test-code/billrequest.interface';
 import { Injectable } from '@angular/core';
+
 
 @Injectable()
 export class LoggerService {
 
-  logs:string[] = [];
+    logs: string[] = [];
 
-  constructor() {
-   }
+    constructor() {
+    }
 
-   log(message):void{
+    log(message): void {
 
-       this.logs.push(`${message} ${new Date().toTimeString()}`);
-       console.log(this.logs);
-   }
+        this.logs.push(`${message} ${new Date().toTimeString()}`);
+        console.log(this.logs);
+    }
 
-   clearLog():void{
+    clearLog(): void {
 
-    this.logs = [];
+        this.logs = [];
 
-   }
+    }
 
-   
+   logBill(bill:IBill):void{
+
+      console.log(`Clicked: ${bill.br.bill_name}!!`);
+
+    }
 
 }
