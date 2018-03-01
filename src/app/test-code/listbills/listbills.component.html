@@ -1,0 +1,9 @@
+<h4>This is a list of all bills filled for 2018 RS</h4>
+<ul>
+  <li *ngFor="let bill of  bills; let i = index;let isLast = last">
+       {{i+1}}. {{bill.br.bill_name}} => draft Id: {{bill.br.draft_doc_id}} 
+       nbsp; published date: {{bill.br.bdweb_published_updated|date:"MM/dd/yyyy"}}
+       &nbsp; (Days: {{bill.br.bdweb_published_updated|date:"MM/dd/yyyy"|datefromstart:"01/01/2018"}})
+       <span *ngIf="isLast" class="billTotalText">(Total Bills: {{bills.length}})</span>
+  </li>
+</ul>

@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+.magentaText{
+   background-color: #4B0082;
+   color:#ffffff;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-size: 1.03em;
+   font-style: italic;
+   font-weight: 700;
+}

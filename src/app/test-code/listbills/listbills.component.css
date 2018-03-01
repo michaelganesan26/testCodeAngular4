@@ -1,0 +1,14 @@
+li{
+  list-style-type: none;
+   color: magenta;
+   font-weight: 900;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-style: italic;
+}
+
+.billTotalText{
+   color:black;
+   font-weight: 900;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-style: italic;
+}

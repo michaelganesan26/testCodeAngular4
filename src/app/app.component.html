@@ -8,13 +8,39 @@
 <h2>Here are some links to help you start: </h2>
 <ul>
   <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
+    <h2>
+      <a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a>
+    </h2>
   </li>
   <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
+    <h2>
+      <a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a>
+    </h2>
   </li>
   <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
+    <h2>
+      <a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a>
+    </h2>
   </li>
 </ul>
+<div>
+  <!-- This is  using the sample code -->
+  <app-prov-demo></app-prov-demo>
 
+</div>
+<div>
+  <!-- On change detection -->
+  <app-change-detection></app-change-detection>
+  <app-hello-world></app-hello-world>
+  <p>This
+    <span appHighlight [textHighLightColors]="highlightColors[0]">is hightlighted</span>
+    <span appHighlight [textHighLightColors]="highlightColors[1]">text</span>
+  </p>
+  <br>
+  <!-- Default ignore colors -->
+  <p>
+    <span appHighlight>Welcome</span> to my World</p>
+</div>
+<div #billsDisplay>
+   <app-listbills></app-listbills>
+</div>
