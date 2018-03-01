@@ -46,7 +46,7 @@
 </div>
 <div #eventDrivenBillDisplay>
   <!-- This is an event driven division -->
-  <app-event-driven></app-event-driven>
+  <app-event-driven (dataMouseClick)= "billItemClicked($event)" ></app-event-driven>
 
 
 

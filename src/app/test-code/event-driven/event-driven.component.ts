@@ -3,8 +3,8 @@ import { IBill, IBillRequest } from './../billrequest.interface';
 import { MockDataService } from './../mock-data.service';
 
 import { NgForOf, NgIf, NgSwitchCase } from '@angular/common';
-import { Component, OnInit, Input, Output } from '@angular/core';
-import { EventEmitter } from 'events';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+
 
 
 @Component({
@@ -14,7 +14,7 @@ import { EventEmitter } from 'events';
 })
 export class EventDrivenComponent implements OnInit {
 
-  @Output("dataClicked") dataMouseClick: EventEmitter = new EventEmitter();
+  @Output() dataMouseClick:EventEmitter<IBill> = new EventEmitter();
   bills:IBill[];
   constructor(bills: MockDataService,private logMessage:LoggerService) {
       this.bills = bills.getBills();
@@ -27,6 +27,8 @@ export class EventDrivenComponent implements OnInit {
 
   itemClicked(item: IBill) {
      this.logMessage.logBill(item);
+     //Send the message to the parent
+     this.dataMouseClick.emit(item);
 
   }
 

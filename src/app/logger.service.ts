@@ -28,4 +28,11 @@ export class LoggerService {
 
     }
 
+    logBillWithMessage(message:string,bill:IBill):void{
+
+        console.log(`${message}, ${bill.br.bill_name}!!`);
+  
+      }
+   
+
 }
