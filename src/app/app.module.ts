@@ -16,6 +16,8 @@ import { DATA_PRODUCTION_SERVER, DATA_TEST_SERVER } from './test-code/global-var
 import { ListbillsComponent } from './test-code/listbills/listbills.component';
 import { DatefromstartPipe } from './test-code/datefromstart.pipe';
 import { EventDrivenComponent } from './test-code/event-driven/event-driven.component';
+import { HambugerIconComponent } from './controls/hambuger-icon/hambuger-icon.component';
+
 
 
 @NgModule({
@@ -27,7 +29,8 @@ import { EventDrivenComponent } from './test-code/event-driven/event-driven.comp
     HighlightDirective,
     ListbillsComponent,
     DatefromstartPipe,
-    EventDrivenComponent
+    EventDrivenComponent,
+    HambugerIconComponent
   ],
   imports: [
     BrowserModule,
@@ -40,4 +43,5 @@ import { EventDrivenComponent } from './test-code/event-driven/event-driven.comp
     LoggerService, MockDataService],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }

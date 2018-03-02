@@ -41,13 +41,17 @@
   <p>
     <span appHighlight>Welcome</span> to my World</p>
 </div>
-<div #billsDisplay>
+<!-- <div #billsDisplay>
    <app-listbills></app-listbills>
+</div> -->
+ <!-- <div>
+   <app-event-driven (dataMouseClick)= "billItemClicked($event)" ></app-event-driven>
+</div>  -->
+
+
+<div>
+  <p>Hamburger Icon</p>
+  <app-hambuger-icon></app-hambuger-icon>
 </div>
-<div #eventDrivenBillDisplay>
-  <!-- This is an event driven division -->
-  <app-event-driven (dataMouseClick)= "billItemClicked($event)" ></app-event-driven>
 
 
-
-</div>
