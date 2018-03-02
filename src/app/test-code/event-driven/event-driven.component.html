@@ -15,8 +15,14 @@
     {{myName.value}}
  </p>
   <label for="myData">On Key Up:</label>
-  <input #myData type="text" (keyup)="onKeyUp($event)"/>
+  <!-- <input #myData type="text" (keyup)="onKeyUp($event)"/> -->
+ <!-- Enter data using the value without the event object -->
+  <!-- <input #myData type="text" (keyup)="onKeyUp(myData.value)"/>
+     {{myData.value}} -->
+    <!-- Enter the value with on key.enter -->
+     <input #myData type="text" (keyup.enter)="onKeyUpEnter(myData.value)"/>
      {{myData.value}}
+
 
 </div>
 
