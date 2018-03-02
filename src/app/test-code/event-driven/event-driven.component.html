@@ -20,7 +20,8 @@
   <!-- <input #myData type="text" (keyup)="onKeyUp(myData.value)"/>
      {{myData.value}} -->
     <!-- Enter the value with on key.enter -->
-     <input #myData type="text" (keyup.enter)="onKeyUpEnter(myData.value)"/>
+     <input #myData type="text" (keyup.enter)="onKeyUpEnter(myData.value)"
+     (blur) = "onBlurInput()"/>
      {{myData.value}}
 
 

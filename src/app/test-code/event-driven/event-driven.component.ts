@@ -55,7 +55,12 @@ export class EventDrivenComponent implements OnInit {
     console.log(data);
   }
 
+  //use the on blur to record when the mouse moved away from the box!
+  onBlurInput(){
 
+    console.log("Moved away from the input box!");
+
+  }
 
 
 }
