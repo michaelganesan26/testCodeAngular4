@@ -6,7 +6,17 @@
   <li *ngFor="let bill of bills;let i = index" (click)="itemClicked(bill)">
        <span>{{bill.br.bill_name}}</span>
   </li>
-
-
 </ul>
+<div>
+<!-- Input with event driven -->
+<label for="myName">User Name:</label>
+  <input #myName type="text" [(ngModel)]="userName" (change)="trackUserName()"/>
+ <p>
+    {{myName.value}}
+ </p>
+  <label for="myData">On Key Up:</label>
+  <input #myData type="text" (keyup)="onKeyUp($event)"/>
+     {{myData.value}}
+
+</div>
 
