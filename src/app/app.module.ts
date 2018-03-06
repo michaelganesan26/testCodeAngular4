@@ -17,6 +17,7 @@ import { ListbillsComponent } from './test-code/listbills/listbills.component';
 import { DatefromstartPipe } from './test-code/datefromstart.pipe';
 import { EventDrivenComponent } from './test-code/event-driven/event-driven.component';
 import { HambugerIconComponent } from './controls/hambuger-icon/hambuger-icon.component';
+import { ChildComponentComponent } from './test-code/parent-child-component/child-component/child-component.component';
 
 
 
@@ -30,7 +31,8 @@ import { HambugerIconComponent } from './controls/hambuger-icon/hambuger-icon.co
     ListbillsComponent,
     DatefromstartPipe,
     EventDrivenComponent,
-    HambugerIconComponent
+    HambugerIconComponent,
+    ChildComponentComponent
   ],
   imports: [
     BrowserModule,
