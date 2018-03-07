@@ -59,7 +59,17 @@
     This is my check box, Wow, this is really cool, I love it!
   </div>
 </div>
-<app-child-component></app-child-component> 
+<div>
+  <h3>List of Task:</h3>
+  <ul>
+    <li *ngFor="let task of taskDataList">
+      {{task.event}}
+    </li>
+  </ul>
+  <p>Total Items: {{totalItems}}</p>
+ 
+</div>
+<app-child-component [totalTask]="totalItems" (taskAdded)="onTaskAdded($event)"></app-child-component> 
 
 
 

@@ -2,7 +2,7 @@
 
 enum eTaskUpdateType { deleteTask, createTask, updateTask };
 interface IToDo {
-    id: number;
+    id?: number;
     task_date?: Date;
     task_description?: string;
     task_dueDate?: string;

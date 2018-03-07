@@ -1,18 +1,25 @@
-
-<div class="alert is-message col-md-6" >
+<div class="alert is-message col-md-6">
   Data Entry for Task
 </div>
 <div class="col-md-6"></div>
 <div class="form-group col-md-6">
+  <label for="id">Event:</label>
+  <input type="text" id="event" [(ngModel)]="currentTask.event" />
+  <br>
   <label for="id">Task Id:</label>
-   <input type="text" [disabled]="true" id="id" value="currentTask.id"/>
-   <br>
-
-   <label for="taskDate">Task Date:</label>
-   <input type="text" id="taskDate" value="currentTask.id" value="currentTask.taskDate"/>
-
+  <input type="text" [disabled]="true" id="id" [value]="currentTask.item.id" />
+  <br>
+  <label for="taskDate">Task Date:</label>
+  <input type="text" id="taskDate" [(ngModel)]="currentTask.item.task_date" />
+  <br>
+  <label for="taskDescription">Task Description:</label>
+  <input type="text" id="taskDescription" [(ngModel)]="currentTask.item.task_description" required/>
+  <br>
+  <label for="taskDueDate">Task Due Date:</label>
+  <input type="text" id="tastDueDate" [(ngModel)]="currentTask.item.task_dueDate" />
+  <br>
+  <label for="taskAdditionalNotes">Additional Notes</label>
+  <input type="text" id="taskAdditionalNotes" [(ngModel)]="currentTask.item.task_additionalNotes" />
+  <button class="btn btn-primary" (click)="submitData()">Submit</button>
+  Total Current Task: {{totalCurrentTask}}
 </div>
-
-
-
-

@@ -33,6 +33,15 @@ export class LoggerService {
         console.log(`${message}, ${bill.br.bill_name}!!`);
   
       }
+
+    //display the message on the development console
+    displayJSONData(data:any){
+
+        console.log(`JSON Data: ${JSON.stringify(data)}`);
+
+    }
+
+
    
 
 }
