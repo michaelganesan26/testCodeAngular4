@@ -1,7 +1,9 @@
+import { TaskMockDataService } from './test-code/parent-child-component/task-mock-data.service';
 import { LoggerService } from './logger.service';
 import { IBill } from './test-code/billrequest.interface';
 import { DATA_TEST_SERVER } from './test-code/global-variables';
 import { Component } from '@angular/core';
+import { ICurrentChildItemData } from './test-code/parent-child-component/parent-child.interface';
 
 
 @Component({
@@ -12,9 +14,22 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'app';
   highlightColors:Array<string> = ["yellow","magenta"];
-   
-  constructor(private logger:LoggerService){
 
+  //MockDataService
+   taskDataList: ICurrentChildItemData[]= [];
+
+
+  
+     
+  constructor(private logger:LoggerService,mockDataService:TaskMockDataService){
+
+       mockDataService.getMockData().then((list:ICurrentChildItemData[])=>{
+          this.taskDataList=list;
+          console.log('Data retrieved');
+
+
+
+       }).catch((err)=>{});
        console.log(DATA_TEST_SERVER);
   }
 

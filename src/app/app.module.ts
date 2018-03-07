@@ -1,3 +1,4 @@
+import { TaskMockDataService } from './test-code/parent-child-component/task-mock-data.service';
 import { MockDataService } from './test-code/mock-data.service';
 import { LoggerService } from './logger.service';
 import { BrowserModule } from '@angular/platform-browser';
@@ -42,7 +43,7 @@ import { ChildComponentComponent } from './test-code/parent-child-component/chil
   //providers: [{provide:MyClass,useClass:MyClassMockData}],
   providers: [{ provide: MyClass, useClass: MyClass },
   { provide: DATA_TEST_SERVER, useValue: "mikegServer" },
-    LoggerService, MockDataService],
+    LoggerService, MockDataService,TaskMockDataService],
   bootstrap: [AppComponent]
 })
 

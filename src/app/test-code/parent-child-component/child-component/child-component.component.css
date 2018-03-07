@@ -1,0 +1,11 @@
+
+.alert.is-important{
+    border-left:10px solid #ff9800;
+    background-color: rgba(255,152,0,0.05);
+  }
+
+  .alert.is-message{
+    border-left:10px solid #5eff00;
+    background-color: rgba(102, 255, 0, 0.05);
+
+  }
